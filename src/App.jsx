@@ -25,7 +25,7 @@ import "./styles.css";
  */
 const siteProps = {
   name: "Abhishek Sharma",
-  title: "Web & Flutter Developer",
+  title: "Front End Developer",
   email: "abhishek131214@gmail.com",
   gitHub: "abhi7889",
   instagram: "abhi_pangotra",
