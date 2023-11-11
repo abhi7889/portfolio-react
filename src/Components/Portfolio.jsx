@@ -34,26 +34,26 @@ const projectList = [
     title: "POCKET NOTES",
     description:
       "Pocket Notes is a responsive web application that enables users to create multiple note groups. Each group can contain numerous notes, each automatically timestamped upon creation. All notes are persistently stored in local storage for easy access and management.",
-    url: "https://dev.to/azure/10-things-to-know-about-azure-static-web-apps-3n4i",
+    url: "https://github.com/abhi7889/pocket-notes",
   },
   {
     title:
       "K-CARE (KISAN CARE) | ML-based Flutter App for Smart Agriculture to Predict Crop Disease and NPK Ratio",
     description:
       "Contributed sketch note imagery to accompany each lesson. These help provide visual representation of what is being taught.",
-    url: "https://github.com/microsoft/web-dev-for-beginners",
+    url: "https://github.com/abhi7889/super-app",
   },
   {
     title: "SUPER APP ",
     description:
       "Developed a comprehensive Super App using React, offering features like user registration, timer functionality, note-taking, real-time weather updates, news feeds, and dynamic movie recommendations based on selected genres, all fetched via APIs. The app is designed with user-friendly interfaces for accessing entertainment, creating and saving notes, and displaying real-time news updates.",
-    url: "https://github.com/microsoft/workshop-library/tree/main/full/build-resume-website",
+    url: "https://github.com/abhi7889/NPK-preciction",
   },
   {
     title: "TICKETLESS ENTRY SYSTEM TO MONUMENTS",
     description:
       "Developed a user-friendly digital ticket booking app using Flutter for museums/monuments. The app features a QR code ticket system for entry and offers visitors easy booking, status viewing, and cancellation options. Implemented a payment system using Stripe for secure and convenient transactions.",
-    url: "https://www.youtube.com/watch?v=c3hHhRME_XI",
+    url: "https://github.com/abhi7889/Ticketless-entry-system-to-monuments",
   },
 ];
 
