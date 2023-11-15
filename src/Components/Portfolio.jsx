@@ -19,9 +19,9 @@ import React from "react";
  * Need an image? Check out https://unsplash.com to download a photo you
  * freely use on your site.
  */
-import image from "../images/sleepy-logo.png";
 
-const imageAltText = "desktop with books and laptop";
+import image2 from "../images/pocket.png";
+import image3 from "../images/superapp.jpg";
 
 /**
  * Project list
@@ -32,57 +32,76 @@ const imageAltText = "desktop with books and laptop";
 const projectList = [
   {
     title: "POCKET NOTES",
-    description:
-      "Pocket Notes is a responsive web application that enables users to create multiple note groups. Each group can contain numerous notes, each automatically timestamped upon creation. All notes are persistently stored in local storage for easy access and management.",
+    imageUrl: image2,
     url: "https://github.com/abhi7889/pocket-notes",
+    demo: "https://github.com/abhi7889",
+    description: "This is a description of the POCKET NOTES project.",
   },
   {
-    title:
-      "K-CARE (KISAN CARE) | ML-based Flutter App for Smart Agriculture to Predict Crop Disease and NPK Ratio",
-    description:
-      "Contributed sketch note imagery to accompany each lesson. These help provide visual representation of what is being taught.",
+    title: "K-CARE",
+    imageUrl: image3,
     url: "https://github.com/abhi7889/super-app",
+    demo: "https://github.com/abhi7889",
+    description: "This is a description of the POCKET NOTES project.",
   },
   {
     title: "SUPER APP ",
-    description:
-      "Developed a comprehensive Super App using React, offering features like user registration, timer functionality, note-taking, real-time weather updates, news feeds, and dynamic movie recommendations based on selected genres, all fetched via APIs. The app is designed with user-friendly interfaces for accessing entertainment, creating and saving notes, and displaying real-time news updates.",
+    imageUrl: image3,
     url: "https://github.com/abhi7889/NPK-preciction",
+    demo: "https://github.com/abhi7889",
+    description: "This is a description of the POCKET NOTES project.",
   },
   {
-    title: "TICKETLESS ENTRY SYSTEM TO MONUMENTS",
-    description:
-      "Developed a user-friendly digital ticket booking app using Flutter for museums/monuments. The app features a QR code ticket system for entry and offers visitors easy booking, status viewing, and cancellation options. Implemented a payment system using Stripe for secure and convenient transactions.",
+    title: "TICKETLESS ENTRY SYSTEM",
+    imageUrl: image3,
     url: "https://github.com/abhi7889/Ticketless-entry-system-to-monuments",
+    demo: "https://github.com/abhi7889",
+    description: "This is a description of the POCKET NOTES project.",
   },
 ];
 
 const Portfolio = () => {
   return (
-    <section className="padding" id="portfolio" style={{ backgroundColor: "#36454f" }}>
-      <h2 style={{ textAlign: "center", color: "whitesmoke" }}>Projects</h2>
+    <section className="padding" id="portfolio" style={{ backgroundColor: "#E8F1F2" }}>
+      <h2 style={{ textAlign: "center", color: "#252627" }}>Projects</h2>
       <div
         style={{
           display: "flex",
           flexDirection: "row",
           paddingTop: "3rem",
-          backgroundColor: "#36454f",
+          backgroundColor: "#E8F1F2",
         }}
       >
-        <div style={{ maxWidth: "40%", alignSelf: "center" }}>
-          <img
-            src={image}
-            style={{ height: "80%", width: "90%", objectFit: "cover" }}
-            alt={imageAltText}
-          />
-        </div>
         <div className="container">
-          {projectList.map((project) => (
-            <div className="box" key={project.title}>
+          {projectList.map((project, index) => (
+            <div className="box" key={index}>
+              <img
+                style={{ width: "300px", borderRadius: "10px" }}
+                src={project.imageUrl}
+                alt={project.title}
+              />
+              <h2>{project.title}</h2>
+              <p>{project.description}</p>
               <a href={project.url} target="_blank" rel="noopener noreferrer">
-                <h3 style={{ flexBasis: "40px" }}>{project.title}</h3>
+                <div className="links">
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+                    alt="h"
+                    style={{ width: "40px", height: "40px" }}
+                  />
+
+                  <h3 style={{ letterSpacing: "12px", fontWeight: "900", cursor: "pointer" }}>
+                    CODE
+                  </h3>
+                  <a href={project.url} target="_blank" rel="noopener noreferrer">
+                    <img
+                      src="https://img.icons8.com/ios-filled/50/circled-up-2.png"
+                      alt="h"
+                      style={{ width: "40px", height: "40px", transform: "rotate(45deg)" }}
+                    />
+                  </a>
+                </div>
               </a>
-              <p className="small">{project.description}</p>
             </div>
           ))}
         </div>

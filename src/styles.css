@@ -43,7 +43,7 @@ section img.background {
   transform: translate(-50%, 0);
   width: 100vmax;
   z-index: -1;
-  filter:brightness(60%)
+  filter:brightness(40%)
 }
 
 h1 {
@@ -106,22 +106,42 @@ a:hover {
 .container {
   display: grid;
   grid-gap: 20px;
-  grid-template-columns: 330px 300px;
+  grid-template-columns: 330px 330px 330px;
   margin: 20px auto;
+  justify-content: center;
+  
 }
 
 .container .box {
   border-radius: 10px;
   border: 1px solid rgb(204, 204, 204);
   display: flex;
+  
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: center;
   padding: 24px 16px;
   text-align: center;
-  background-color: aliceblue;
+  background-color: #CFDBD5;
 }
 
 img.socialIcon {
   height: 30px;
   width: 30px;
+}
+.links
+{
+
+  width: 250px;
+  height: 50px;
+  backdrop-filter: blur(4px);
+  border: 1px solid rgba(255,255,255,.18);
+  margin-top: 30px;
+  margin-left: 20px;
+  box-shadow: 0 8px 32px #1f26875e;
+  display: flex;
+  align-items: center;
+  border-radius: 30px;
+  padding: 5px 10px;
+  justify-content: space-between;
+
 }
